@@ -14,49 +14,20 @@
 
 | Обозначение | Часть речи |
 | ------------- | ------------- |
-| A  | Content Cell  |
-| ADV  | Content Cell  |
-| ADVPRO  | Content Cell  |
-| ANUM  | Content Cell  |
-| APRO  | Content Cell  |
-| COM  | Content Cell  |
-| CONJ  | Content Cell  |
-| INTJ  | Content Cell  |
-| NUM  | Content Cell  |
-| PART  | Content Cell  |
-| PR  | Content Cell  |
-| S  | Content Cell  |
-| SPRO  | Content Cell  |
-| V  | Content Cell  |
-| PARTCP  | Content Cell  |
-| GER  | Content Cell  |
+| A  | прилагательное|
+| ADV  | наречие  |
+| ADVPRO  | местоименное наречие  |
+| ANUM  | числительное-прилагательное  |
+| APRO  | местоимение-прилагательное  |
+| COM  | часть композита - сложного слова  |
+| CONJ  | союз  |
+| INTJ  | междометие  |
+| NUM  | числительное  |
+| PART  | частица  |
+| PR  | предлог  |
+| S  | существительное  |
+| SPRO  | местоимение-существительное  |
+| V  | глагол  |
+| PARTCP  | причастие  |
+| GER  | деепричастие  |
 
-
-
-A – прилагательное
-ADV
-наречиA
-ADVPRO
-местоименное наречие
-ANUM
-числительное-прилагательное
-APRO
-местоимение-прилагательное
-COM
-часть композита - сложного слова
-CONJ
-союз
-INTJ
-междометие
-NUM
-числительное
-PART
-частица
-PR
-предлог
-S
-существительное
-SPRO
-местоимение-существительное
-V
-глагол
