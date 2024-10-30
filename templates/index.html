@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %} О корпусе {% endblock %}
+
+{% block content %}
+<!-- Upper block -->
+<div class="py-3 bg-secondary-subtle text-secondary-emphasis">
+    <h2 class="text-center" style="color: #d63384;">Корпус woman.ru</h2>
+    <div class="col-lg-6 mx-auto">
+      <p>Веб-корпус текстов форума woman.ru с возможностью грамматического поиска</p>
+        <!-- Button for straight search -->
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="\search" type="button" class="btn btn-outline-secondary">Начать поиск по корпусу</a>
+      </div>
+    </div>
+</div>
+
+<div style="margin: 25px"></div>
+<!-- Block about corpora with clearfix -->
+<div class="container">
+    <div class="clearfix">
+        <img src="/static/taro_topic.png" class="col-md-6 float-md-end mb-3 ms-md-3" style="width: 450px; height: auto;" alt="">
+        <p> Материал для корпуса был собран из ответов под популярным обсуждением форума
+        "предсказания по картам ТАРО"</p>
+        <p> Для морфологической разметки корпуса и анализа при грамматическом поиске был использован Mystem</p> <br>
+    </div>
+</div>
+
+    <br><hr class="border border-secondary border-2 opacity-50"><br>
+
+    <h3 class="text-start" style="color: #d63384">Команда</h3> <br>
+    <!-- Карточки с членами команды -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="/static/taro_icon.png" class="card-img-top" alt="" style="width: 65%; height: 65px; object-fit: cover;">
+                    <div class="card-body">
+                        <!-- Текст карточки -->
+                        <p class="card-text">Варвара Ермолина</p>
+                        <p class="card-text" style="color: #6c757d; font-size: 0.875rem;">Разработчик 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="/static/taro_icon.png" class="card-img-top" alt="" style="width: 65%; height: 65px; object-fit: cover;">
+                    <div class="card-body">
+                        <!-- Текст карточки -->
+                        <p class="card-text">Владислава Термус</p>
+                        <p class="card-text" style="color: #6c757d; font-size: 0.875rem;">Разработчик 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="/static/taro_icon.png" class="card-img-top" alt="" style="width: 65%; height: 65px; object-fit: cover;">
+                    <div class="card-body">
+                        <!-- Текст карточки -->
+                        <p class="card-text">Мария Селифанова</p>
+                        <p class="card-text" style="color: #6c757d; font-size: 0.875rem;">Разработчик 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="/static/taro_icon.png" class="card-img-top" alt="" style="width: 65%; height: 65px; object-fit: cover;">
+                    <div class="card-body">
+                        <!-- Текст карточки -->
+                        <p class="card-text">Александра Погожева</p>
+                        <p class="card-text" style="color: #6c757d; font-size: 0.875rem;">Разработчик 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

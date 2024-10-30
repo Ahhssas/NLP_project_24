@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d63384;">
+        <!-- Сore nav item -->
+            <a class="navbar-brand" href="/">
+                <img src="/static/woman_corpora.png" alt="" width="153" height="64" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- main -->
+                    <li class="nav-item">
+                        <a class="nav-link active text-white font-weight-bold" aria-current="page" href="/">Главная</a>
+                    </li>
+                    <!-- /search -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold" href="/search">Поиск</a>
+                    </li>
+                    <!-- /rating -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-weight-bold" href="/rating">Статистика</a>
+                    </li>
+
+                    <!-- выпадающий список -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Ссылки
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item external" href="https://github.com/Ahhssas/NLP_project_24">
+                                <img src="/static/github-logo.png" alt="" width="103" height="40" class="d-inline-block align-text-top"></a></li>
+                            <li><a class="dropdown-item external" href="https://www.woman.ru/relations/men/thread/3813429/">Источник</a></li>
+                            <li><a class="dropdown-item external" href="https://yandex.ru/dev/mystem">MyStem</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div style="margin: 35px 9%">
+
+        {% block content %} {% endblock %}
+
+    </div>
+
+</body>
+<!-- Sticky footer -->
+<footer class="footer">
+          <div class="container">
+              <div class="sticky-bottom">
+              <p class="navbar-text navbar-left text-muted">          ФиКЛ 2024
+                  <span class="glyphicon glyphicon-copyright-mark" aria-hidden="false"></span></p>
+              </div>
+          </div>
+      </footer>
+</html>

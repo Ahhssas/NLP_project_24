@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Статистика {% endblock %}
+
+{% block content %}
+
+<h4 class="text-start" style="color: #6c757d;">Объем корпуса</h4>
+<br>
+<!-- Badges for size statistics -->
+<span class="badge rounded-pill" style="background: #d63384; font-size: 1.1rem; padding: 0.40em 0.9em;">> 700 ответов</span>
+<br> <br>
+<span class="badge rounded-pill" style="background: #d63384; font-size: 1.1rem; padding: 0.40em 1.2em;">> 19 500 токенов</span>
+<br>
+<br><hr class="border border-secondary border-2 opacity-50"><br>
+<!-- POS statistics -->
+<h4 class="text-start" style="color: #6c757d;">Статистика по частям речи</h4>
+<img src="/static/bar_pos.png" class="img-fluid" alt="">
+
+
+{% endblock %}

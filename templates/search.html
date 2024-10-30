@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %} Поиск по корпусу {% endblock %}
+
+{% block content %}
+
+<div class="p-3 mb-2 bg-light text-dark">
+<h2 class="text-center" style="color: #d63384;">Поиск по корпусу</h2>
+<div style="margin: 25px"></div>
+<div class="container">
+    <!-- Form for searching -->
+  <form class="lead" action="/results">
+        <input type="text" class="form-control" placeholder="Введите запрос" id="userForm" name="Enter" required>
+        <br>
+      <button type="submit" class="btn btn-secondary" style="background: #d63384;">Найти</button>
+        <br>
+        <br>
+      </form>
+      <div class="container-info">
+          <h4 class="text-start" style="color: #6c757d;">Формат поиска</h4>
+          <!-- List with search format -->
+          <ul class="list-unstyled">
+              <li>
+              <ul>
+                  <li> <code>дом</code> - поиск по лемме (выдаст предложения с любой грамматической формой)</li>
+                  <li> <code>"дома"</code> - поиск по словоформе (выдаст предложения только с этой грамматической формой)</li>
+                  <li> <code>S</code> - поиск по части речи (выдаст все предложения с этой частью речи)</li>
+                  <li> <code>дом+S</code> - поиск по лемме, принадлежащей к определенной части речи</li>
+                  <li> <code>S ADV V</code> - поиск последовательности</li>
+                  </ul>
+              </li>
+          </ul>
+          <p class="fst-italic">лемма всегда вводится без кавычек</p>
+          <br>
+
+          <h5 class="text-start" style="color: #d63384;">Допустимые POS-теги:</h5>
+
+          <!-- Кнопки-теги частей речи с пояснениями-->
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="прилагательное" style='font-size: 1rem; padding: 0.2rem 0.5rem;'>
+              А</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="наречие" style='font-size: 1rem; padding: 0.2rem 0.5rem;'>
+              ADV</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="деепричастие" style='font-size: 1rem; padding: 0.2rem 0.6rem;'>
+              ADVPRO</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="числительное-прилагательное" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              ANUM</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="местоимение-прилагательное" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              APRO</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="часть композита - сложного слова" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              COM</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="союз" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              CONJ</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="междометие" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              INTJ</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="числительное" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              NUM</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="частица" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              PART</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="предлог" style='font-size: 1rem; padding: 0.2rem 0.6rem;'>
+              PR</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="существительное" style='font-size: 1rem; padding: 0.2rem 0.5rem;'>
+              S</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="местоимение-существительное" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              SPRO</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="глагол" style='font-size: 1rem; padding: 0.2rem 0.5rem;'>
+              V</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="деепричастие" style='font-size: 1rem; padding: 0.2rem 0.6rem;'>
+              PARTCP</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="деепричастие" style='font-size: 1rem; padding: 0.2rem 0.7rem;'>
+              GER</button>
+
+          <p class="fst-italic">наведите на тег, чтобы увидеть значение</p>
+
+</div>
+</div>
+</div>
+{% endblock %}
